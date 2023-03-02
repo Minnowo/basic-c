@@ -1,5 +1,5 @@
 
-all: hello fizzbuzz
+all: hello fizzbuzz tictactoe
 
 hello: 
 	gcc hello_world.c -o hello.o
@@ -7,6 +7,8 @@ hello:
 fizzbuzz: 
 	gcc fizzbuzz.c -o fizzbuzz.o
 
+tictactoe:
+	gcc tictactoe.c -o tictactoe.o
 
 clean:
-	rm hello.o fizzbuzz.o
+	rm hello.o fizzbuzz.o tictactoe.o
